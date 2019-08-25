@@ -94,6 +94,19 @@
           "type": "number",
           "default": 10,
           "description": "Maximum number of documents used for suggest."
+        },
+        "autocompleteWords.excludeFiles": {
+          "type": "array",
+          "items": "string",
+          "default": [
+            "settings",
+            "settings/editor",
+            "vscode-extensions",
+            "extensions",
+            "vs_code_welcome_page",
+            "tsconfig.schema.json"
+          ],
+          "description": "Maximum number of documents used for suggest."
         }
       }
     }

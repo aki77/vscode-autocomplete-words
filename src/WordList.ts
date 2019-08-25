@@ -41,6 +41,11 @@ export default class WordList implements CompletionItemProvider, Disposable {
       return;
     }
 
+    const excludeFiles: string[] = this.config.get("excludeFiles", []);
+    if (excludeFiles.includes(path.basename(documentPath))) {
+      return;
+    }
+
     if (this.cache.document !== document) {
       this.clearCache();
     }
