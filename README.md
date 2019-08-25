@@ -17,7 +17,7 @@ This extension contributes the following settings:
 - `autocompleteWords.minWordLength`: Minimum word length to keep in autocomplete list. (default: `4`)
 - `autocompleteWords.maxLineCount`: Exclude files larger than the maximum number of lines. (default: `999`)
 - `autocompleteWords.maxDocumentCount`: Maximum number of documents used for suggest. (default: `10`)
-- `autocompleteWords.languages`: language settings. (default: See `package.json`)
+- `autocompleteWords.languages`: language settings. (default: See [package.json](https://github.com/aki77/vscode-autocomplete-words/blob/master/package.json#L29-L82))
 
 ## TODO
 
