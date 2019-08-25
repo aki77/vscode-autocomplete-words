@@ -102,7 +102,7 @@ export default class WordList implements CompletionItemProvider, Disposable {
   private async otherDocumentWords(document: TextDocument) {
     const words: Map<string, Set<string>> = new Map();
     const documents = workspace.textDocuments
-      .filter(doc => doc !== document)
+      .filter(doc => doc !== document && this.documents.has(doc))
       .slice(0, this.config.get("maxDocumentCount", 10));
 
     for (const doc of documents) {

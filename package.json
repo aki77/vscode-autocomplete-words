@@ -58,7 +58,6 @@
               ]
             },
             "typescript": {
-              "wordPattern": "(-?\\d*\\.\\d\\w*)|([^\\`\\~\\!\\@\\#\\%\\^\\&\\*\\(\\)\\-\\=\\+\\[\\{\\]\\}\\\\\\|\\;\\:\\'\\\"\\,\\.\\<\\>\\/\\?\\s]+)/",
               "ignoredWords": [
                 "class",
                 "function",
@@ -71,12 +70,6 @@
                 "function",
                 "const"
               ]
-            },
-            "json": {
-              "wordPattern": "(\"(?:[^\\\\\\\"]*(?:\\\\.)?)*\"?)|[^\\s{}\\[\\],:]+"
-            },
-            "jsonc": {
-              "wordPattern": "(\"(?:[^\\\\\\\"]*(?:\\\\.)?)*\"?)|[^\\s{}\\[\\],:]+"
             }
           }
         },
@@ -92,7 +85,7 @@
         },
         "autocompleteWords.maxDocumentCount": {
           "type": "number",
-          "default": 10,
+          "default": 15,
           "description": "Maximum number of documents used for suggest."
         },
         "autocompleteWords.excludeFiles": {
@@ -107,7 +100,10 @@
             "extensions",
             "vs_code_welcome_page",
             "tsconfig.schema.json",
-            "editor"
+            "package.schema.json",
+            "editor",
+            "user",
+            "launch"
           ],
           "description": "Maximum number of documents used for suggest."
         }

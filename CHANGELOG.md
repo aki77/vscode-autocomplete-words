@@ -4,9 +4,14 @@ All notable changes to the "autocomplete-words" extension will be documented in 
 
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
+## 0.1.3
+
+- Update excludeFiles
+- Fix json and typescript wordPattern
+
 ## 0.1.2
 
-- Update excludeFiles 
+- Update excludeFiles
 
 ## 0.1.1
 
