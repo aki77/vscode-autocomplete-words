@@ -97,14 +97,17 @@
         },
         "autocompleteWords.excludeFiles": {
           "type": "array",
-          "items": "string",
+          "items": {
+            "type": "string"
+          },
           "default": [
             "settings",
             "settings/editor",
             "vscode-extensions",
             "extensions",
             "vs_code_welcome_page",
-            "tsconfig.schema.json"
+            "tsconfig.schema.json",
+            "editor"
           ],
           "description": "Maximum number of documents used for suggest."
         }
