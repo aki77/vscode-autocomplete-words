@@ -1,3 +1,5 @@
+> Now present as a feature in VSCode natively. Use `editor.wordBasedSuggestionsMode` setting and set this to `allDocuments`
+
 # Autocomplete Words
 
 Create completion items from other open files.
